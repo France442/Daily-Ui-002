@@ -33,13 +33,13 @@
 
                 <div class="date">
                     <label for="expirationDate">Expiration Date</label><br>
-                    <input class="month" type="text" id="expirationDate" required placeholder="MM">
-                    <input class="year" type="text" required placeholder="YY">
+                    <input class="month" type="number" min="1" max="12" maxlength="2" id="expirationDate" required placeholder="MM">
+                    <input class="year" type="number" min="1800" max="2024" required placeholder="YY">
                 </div>
 
                 <div class="cvc">
-                    <label for="cvc">CVC</label><br>
-                    <input type="text" id="cvc" required placeholder="123">
+                    <label for="cvc">CVC/CVV</label><br>
+                    <input type="number" id="cvc" maxlength="2" placeholder="123">
                 </div>
             </div>
 
