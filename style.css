@@ -71,7 +71,7 @@ label {
     color: #333;
 }
 
-input[type="text"] {
+input {
     width: 100%;
     padding: 0.6rem;
     margin-top: 0.4rem;
@@ -82,9 +82,6 @@ input[type="text"] {
     transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus {
-    border-color: #45bb0f;
-}
 
 .shop {
     margin-bottom: 1.5rem;
@@ -106,9 +103,6 @@ td {
     font-size: 0.9rem;
 }
 
-td:nth-child(2) {
-    text-align: right;
-}
 
 tfoot td {
     border-top: 1px solid #ccc;
@@ -131,3 +125,10 @@ tfoot td {
 .button:hover {
     background-color: #3aa50a;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
