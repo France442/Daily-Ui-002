@@ -3,36 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
+    <title>Daily UI | Day 002</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8faf669c27.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <audio src="./Sounds/he-needs-some-milk-vine (1).mp3"></audio>
-    <div class="card">
-        <div class="content">
-    <h1>BMI Calculator</h1>
-    <p>
-    <label for="weight">Weight: </label> <br>
-    <input type="number" id="weight" class="weight" required placeholder="weight(kg)"><br>
+    <div class="container">
+        <div class="card">
+            <div class="heading">
+                <h1>Payment Information</h1>
+            </div>
+            <div class="options">
+                <div class="pay-op"><i class="fab fa-paypal"></i> PayPal</div>
+                <div class="pay-op"><i class="fab fa-cc-visa"></i> Visa</div>
+            </div>
 
-</p>
-<p>
-    <label for="height">Height: </label> <br>
-    <input type="number" id="height" class="height" required placeholder="height(m)"><br>
-</p>
+            <div class="payinfo">
+                <div class="user">
+                    <label for="name">Name</label><br>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" required>
+                </div>
 
-<div class="buttons">
-    <button id="calculate">Calculate BMI</button>
-    <br>
-    <button id="reset">Reset</button>
-</div>
-<p>Your BMI :</p>
-<p id="result">
- 
-</p>
-</div>
-</div>
+                <div class="number">
+                    <label for="cardNumber">Card Number</label><br>
+                    <i class="far fa-credit-card"></i>
+                    <input type="text" id="cardNumber" required>
+                </div>
 
-    <script src="index.js"></script>
+                <div class="date">
+                    <label for="expirationDate">Expiration Date</label><br>
+                    <input class="month" type="number" min="1" max="12" maxlength="2" id="expirationDate" required placeholder="MM">
+                    <input class="year" type="number" min="1800" max="2024" required placeholder="YY">
+                </div>
+
+                <div class="cvc">
+                    <label for="cvc">CVC/CVV</label><br>
+                    <input type="number" id="cvc" maxlength="2" placeholder="123">
+                </div>
+            </div>
+
+            <div class="shop">
+                <h2>Shopping Bill</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Shipping fee</td>
+                            <td align="right">$5.43</td>
+                        </tr>
+                        <tr>
+                            <td>Discount 10%</td>
+                            <td align="right">-$1.89</td>
+                        </tr>
+                        <tr>
+                            <td>Price Total</td>
+                            <td align="right">$84.82</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td align="right">$88.36</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <button class="button">Pay Now</button>
+        </div>
+    </div>
 </body>
 </html>
